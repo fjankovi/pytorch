@@ -44,7 +44,7 @@ macro(custom_protobuf_find)
   if(MSVC AND NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     enable_language(RC)
     set(CMAKE_RC_COMPILE_OBJECT
-        "<CMAKE_RC_COMPILER> /l0x409 <DEFINES> /fo<OBJECT> <SOURCE>")
+        "<CMAKE_RC_COMPILER> /l0x409 <DEFINES> /fo<OBJECT> <SOURCE>")  # codespell:ignore fo
   endif()
 
   if(CMAKE_VERSION VERSION_GREATER_EQUAL "4.0.0")
